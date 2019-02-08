@@ -1,2 +1,3 @@
-# simple-static-http-server
-Simple static http server with no dependency written in go
+# Simple static Http Server
+Simple static http server with minimum dependencies written in go.
+
