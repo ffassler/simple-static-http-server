@@ -1,5 +1,7 @@
 # Simple static http server
 
+[![Build Status](https://api.cirrus-ci.com/github/ffassler/simple-static-http-server.svg)](https://cirrus-ci.com/github/ffassler/simple-static-http-server)
+
 The aim of this project is to offer a simple [http](https://fr.wikipedia.org/wiki/Hypertext_Transfer_Protocol) server with :
 - just one feature : serve static files
 - simple to be configured : command line arguments
