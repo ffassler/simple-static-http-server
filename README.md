@@ -34,7 +34,7 @@ $ ll simple-static-http-server
 ### Build
 
 ```sh
-go build
+go build -o simple-static-http-server
 ```
 
 ## Usage
