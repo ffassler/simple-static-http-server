@@ -1,5 +1,6 @@
 # Simple static http server
 
+[![Release](https://img.shields.io/github/release/ffassler/simple-static-http-server.svg)](https://github.com/ffassler/simple-static-http-server/releases)
 [![Build Status](https://api.cirrus-ci.com/github/ffassler/simple-static-http-server.svg)](https://cirrus-ci.com/github/ffassler/simple-static-http-server)
 
 The aim of this project is to offer a simple [http](https://fr.wikipedia.org/wiki/Hypertext_Transfer_Protocol) server with :
