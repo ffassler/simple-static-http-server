@@ -1,5 +1,6 @@
 FROM golang:1.11 as builder
 COPY main.go .
+COPY main_test.go .
 RUN GOOS=linux go build -o simple-http-server
 RUN GOOS=linux go test
 
