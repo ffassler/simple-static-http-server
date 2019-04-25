@@ -38,6 +38,8 @@ $ ll simple-static-http-server
 
 ```sh
 go build -o simple-static-http-server
+go get github.com/stretchr/testify/assert
+go test
 ```
 
 ## Usage
@@ -70,6 +72,11 @@ In case of error, logs are printed.
 $ ./simple-static-http-server -d /static -p 80  
 2019/02/12 14:17:04 Cannot start the http server : listen tcp :80: bind: permission denied
 ```
+
+In addition, the following exit codes are available.
+
+- 1 : Error during get of current directory
+- 2 :  Error during starting of the http server
 
 ## Deployment
 
