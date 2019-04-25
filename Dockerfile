@@ -1,6 +1,7 @@
 FROM golang:1.11 as builder
 COPY main.go .
 RUN GOOS=linux go build -o simple-http-server
+RUN GOOS=linux go test
 
 FROM alpine:3.9
 RUN apk add --no-cache libc6-compat
