@@ -4,14 +4,14 @@
 [![Build Status](https://api.cirrus-ci.com/github/ffassler/simple-static-http-server.svg)](https://cirrus-ci.com/github/ffassler/simple-static-http-server)
 
 The aim of this project is to offer a simple [http](https://fr.wikipedia.org/wiki/Hypertext_Transfer_Protocol) server with :
-- just one feature : serve static files
-- simple to be configured : command line arguments
-- light : small binary size
+- just one feature : serve static files.
+- simple to be configured : command line arguments.
+- light : small binary size.
 - very easy to deploy : copy the binary and that it ! No package, no node or python are required.
 
 To realize this aim, the server is written in [go](https://golang.org/) with no additional modules.
 
-Because of that, for example, under a Linux OS the required dependies are only :
+Because of that, for example, under a Linux OS the required dependencies are only :
 
 ```sh
 $ ldd simple-static-http-server 
@@ -27,12 +27,15 @@ The size is also very small. For example, under Ubuntu 18.04 :
 $ ll simple-static-http-server 
 -rwxrwxr-x 1 ubuntu01 ubuntu01 6.5M Feb 12 13:53 simple-static-http-server
 ```
+## How to download the binary
+
+Go to the [releases page](https://github.com/ffassler/simple-static-http-server/releases) and download the last version version for your operating system.
 
 ## How to build from sources
 
 ### Prerequisites
 
-- [go binary](https://golang.org/doc/install)
+- [go binary](https://golang.org/doc/install) (tested with go 1.11 et go 1.12).
 
 ### Build
 
@@ -45,7 +48,7 @@ go test
 ## Usage
 
 All configurations are defined by command line arguments.
-These arguments is printed by the flag -h
+These arguments is printed by the flag -h :
 
 ```sh
 
@@ -75,8 +78,8 @@ $ ./simple-static-http-server -d /static -p 80
 
 In addition, the following exit codes are available.
 
-- 1 : Error during get of current directory
-- 2 :  Error during starting of the http server
+- 1 : Error during get of current directory.
+- 2 :  Error during starting of the http server.
 
 ## Deployment
 
@@ -84,13 +87,13 @@ Just copy the binary !
 
 ## Docker
 
-A docker image is available on dockerhub [squareitservices/static-http-server](https://hub.docker.com/r/squareitservices/static-http-server)
+A docker image is available on dockerhub [squareitservices/static-http-server](https://hub.docker.com/r/squareitservices/static-http-server).
 
-The docker image is based on alpine with just the only one required dependecy *libc6-compat*
+The docker image is based on alpine with just the only one required dependecy *libc6-compat*.
 
 ### Build image from dockefile
 
-The [dockerfile](Dockerfile) is a multi stage build which build the binary from sources and then create the docker image
+The [dockerfile](Dockerfile) is a multi stage build which build the binary from sources and then create the docker image :
 
 ```sh
 docker build -t static-http-server:tag .
