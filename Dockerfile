@@ -1,4 +1,4 @@
-FROM golang:1.11 as builder
+FROM golang:1.12.7 as builder
 COPY main.go .
 COPY main_test.go .
 RUN GOOS=linux go build -o simple-http-server
